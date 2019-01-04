@@ -1,23 +1,22 @@
 html {
 	font-size: 1em;
-	background: #D6D9FF;
 	‑webkit‑text‑size‑adjust: 100%;
 	-ms-text-size-adjust: 100%; 
 }
 
 body {
 	margin: 0px;
-	font-size: TODO;
-	font-family: TODO;
+	font-size: 16px;
+	font-family: Raleway;
 	text-align: center;
-	color: TODO; 
-	background-color: TODO;
+	color: #333333; 
+	background-color: #DEE5FF;
 }
 
 <!-- typewriter effect from tutorial https://css-tricks.com/snippets/css/typewriter-effect/ --> 
 .typewriter {
-	color: TODO;
-	font-family: TODO;
+	color: #333333;
+	font-family: Raleway;
 	letter-spacing: .15em;
 	overflow: hidden;
 	white-space: no-wrap; 
