@@ -1,0 +1,38 @@
+html {
+	font-size: 1em;
+	background: #D6D9FF;
+	‑webkit‑text‑size‑adjust: 100%;
+	-ms-text-size-adjust: 100%; 
+}
+
+body {
+	margin: 0px;
+	font-size: TODO;
+	font-family: TODO;
+	text-align: center;
+	color: TODO; 
+	background-color: TODO;
+}
+
+<!-- typewriter effect from tutorial https://css-tricks.com/snippets/css/typewriter-effect/ --> 
+.typewriter {
+	color: TODO;
+	font-family: TODO;
+	letter-spacing: .15em;
+	overflow: hidden;
+	white-space: no-wrap; 
+	margin: 0 auto;
+	animation:
+		typing 3.5s steps(40, end),
+		blink-cursor .75s step-end infinit; 
+}
+
+@keyframes typing {
+	from {width: 0}
+	to {width: 100%} 
+}
+
+@keyframes blinking-cursor {
+	from, to {border-color: transparent}
+	50% {border-color: TODO} 
+}
