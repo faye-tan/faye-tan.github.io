@@ -1,16 +1,71 @@
 html {
-	font-size: 1em;
-	‑webkit‑text‑size‑adjust: 100%;
+  font-size: 1em;
+  ‑webkit‑text‑size‑adjust: 100%;
 	-ms-text-size-adjust: 100%; 
+  overflow-x: scroll;
 }
 
 body {
 	margin: 0px;
 	font-size: 16px;
 	font-family: Raleway;
-	text-align: center;
+	text-align: left;
 	color: #333333; 
 	background-color: #DEE5FF;
+}
+
+#navbar {
+  position: ;
+  background-color: #3333;
+  
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #33;
+}
+
+#name {
+  float: left;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none; 
+}
+
+li a:hover {
+  color: #241157;
+  background-color: #999;
+}
+
+#home {
+  background-color
+}
+
+#aboutme {
+  background-color: #6B7AC9;
+}
+
+footer {
+	padding: 50px; 
+}
+
+footer p{
+  margin: 0;
 }
 
 <!-- typewriter effect from tutorial https://css-tricks.com/snippets/css/typewriter-effect/ --> 
