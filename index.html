@@ -2,15 +2,36 @@
 <html lang="en">
 
 <head>
-	<title> Faye (Jingfei) Tan </title>
-	<meta charset="utf-8">
+  <title> Faye (Jingfei) Tan </title>
+  <meta charset="utf-8">
+	<meta name="description" content="Faye Tan's Personal Website">
+	<meta name="keywords" content="faye jingfei tan"> 
+	<meta name="author" content="Faye Jingfei Tan"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="styles/style.css" rel=stylesheet"> 
+<<<<<<< HEAD
+	<link href="css/style.css" rel="stylesheet"> 
+=======
+	<link href="styles/style.css" rel="stylesheet"> 
+>>>>>>> 3fca315cb9bf652ec89190142864d231a59f470d
 	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar">
+
+	<!-- Navigation -->
+	<nav id="navbar" class="navbar navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+        <li id="name">FAYE TAN</li>
+				<li class="active"><a href="#home"> HOME </a></li>
+				<li><a href="#aboutme"> ABOUT ME </a></li>
+				<li><a href="#projects"> PROJECTS </a></li>
+				<li><a href="#contact"> CONTACT </a></li>
+			</ul>
+		</div>
+	</nav>
+
 	<!-- Home --> 
 	<section id="home">
 		<div class="typewriter"> 
@@ -21,17 +42,6 @@
 		</div>
 	</section>
 
-	<!-- Navigation -->
-	<nav id="nav bar" class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container-fluid">
-			<div class="navbar-brand" href="#">FAYE TAN</a> </div>
-			<div class="current page" dest="home">HOME</div>
-			<div class="page" dest="aboutme"ABOUT ME</div>
-			<div class="page" dest="projects"PROJECTS</div>
-			<div class="page" dest="contact"CONTACT</div>
-		</div>
-	</nav>
-
 	<!-- About Me --> 
 	<div id="aboutme"> 
 	&gt;&gt;&gt; type(Faye) <br>
@@ -41,13 +51,13 @@
 	&gt;&gt;&gt; Faye.age <br>
 	19 <br>
 	&gt;&gt;&gt; Faye.hometown <br>
-	'Saskatoon, Saskatchewan' <br>
+	Saskatoon, Saskatchewan <br>
 	&gt;&gt;&gt; Faye.education <br>
-	'University of Toronto, Year 2' <br>
-	&gt;&gt;&gt; Faye.studies <br>
+	University of Toronto, Undergraduate Year 2 <br>
+	&gt;&gt;&gt; Faye.majors <br>
 	['Computer Science', 'Statistics'] <br>
 	&gt;&gt;&gt; Faye.resume <br>
-	 <br>
+	<span class="output"> <a target="_blank" href="resume.pdf">jingfeitan.resume</a><br></span>
 	&gt;&gt;&gt; Faye.email <br>
 	<span class="output"> <a target="_blank" href="mailto:jingfei.tan@mail.utoronto.ca">jingfei.tan@mail.utoronto.ca</a><br></span> 
 	&gt;&gt;&gt; Faye.linkedin <br>
@@ -55,7 +65,7 @@
 	&gt;&gt;&gt; Faye.github <br>
 	<span class="output"> <a target="_blank" href="https://github.com/jingfeitan">https://github.com/jingfeitan</a><br></span>
 	&gt;&gt;&gt; Faye.telljoke() <br>
-	"If a duck threw bread at you, you'd have to...duck." <br>
+	If a duck threw bread at you, you'd have to...duck. <br>
 	&gt;&gt;&gt; Faye.likes() <br>
 	['avocados', 'chai lattes', 'Debussy', 'marine animals', 'bad puns'] <br>
 	</div>	
@@ -70,7 +80,9 @@
 
 	<!-- Footer --> 
 	<footer> 
-
+		<div id="footer" class="container text-center">
+			<p>&#169 Jingfei Tan 2019.</p>
+		</div>
 	</footer>
 </body>
 
