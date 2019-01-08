@@ -29,35 +29,56 @@
 
 	<!-- Home --> 
 	<section id="home">
-  HOME (This Section Under Construction) <br>
-  <!-- Photo Slideshow from https://www.w3schools.com/howto/howto_js_slideshow.asp --> 
-  <div class="slideshow-container"> 
-    <div class="slide fade"> 
-      <img src="images/slideshow1.JPG" alt="">
-    </div> 
-    <div class="slide fade"> 
-      <img src="images/slideshow2.JPG" alt="">
-    </div> 
-    <div class="slide fade"> 
-      <img src="images/slideshow3.JPG" alt="">
-    </div> 
-    <div class="slide fade"> 
-      <img src="images/slideshow4.JPG" alt=""> 
-    </div> 
-    <div class="slide fade"> 
-      <img src="images/slideshow5.JPG" alt=""> 
-    </div> 
+  HOME (This Section Under Construction) <br> <br>
+  
+  <!-- Photo Slideshow --> 
+  <div id="slideshow-container"> 
+    <input checked type="radio" name="slider" id="slide1" class="set" />
+    <input type="radio" name="slider" id="slide2" class="set" />
+    <input type="radio" name="slider" id="slide3" class="set" />
+    <input type="radio" name="slider" id="slide4" class="set" />
+    <input type="radio" name="slider" id="slide5" class="set" />
     
-    <a class="prev" onclick="nextSlide(-1)"> &#10094 </a>
-    <a class="next" onclick="nextSlide(1)"> &#10095 </a>
+    <div class="mask"> 
+      <div class="overflow">
+      
+        <div class="slide">
+          <img src="images/slideshow1.jpg" alt="Selfie in Italy">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow2.jpg" alt="Sitting on cliff in Banff with friends">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow3.jpg" alt="Friend group photoshoot">
+        </div>
+        <div class="slide">
+          <img src="images/slideshow4.jpg" alt="Little brother on playground"> 
+        </div>
+        <div class="slide">
+          <img src="images/slideshow5.jpg" alt="Swimming in Albera mountain lake"> 
+        </div>
+        
+      </div>
+    </div>
     
+    <div id="controls" onclick="">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+      <label for="slide5"></label>
+      <!-- Controls 
+      <a id="prev" class="slideshow-button" onclick="nextSlide(-1)"> &#10094 </a>
+      <a id="next" class="slideshow-button" onclick="nextSlide(1)"> &#10095 </a>
+      -->
+    </div> 
   </div>
   
 		<div class="typewriter"> 
-			Hello World! <br>
+			<br> Hello World! <br>
 		</div>
 		<div class="intro">
-			I'm Jingfei Tan, but most people call me Faye. I'm programmer with an Photoshop hobby. 
+			My name is Jingfei Tan but I prefer Faye, and I'm programmer with an Photoshop hobby. 
 		</div>
 	</section>
 
