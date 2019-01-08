@@ -63,8 +63,109 @@ li a:hover {
   padding: 60px;
 }
 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
 #container {
   position: relative;
+  top: 50px;
+}
+
+.windows-top {
+  height: 50px;
+  width: 100%;
+  background-color: #B2AEB5;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.circles-wrap {
+  margin: 0 auto;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.redcircle {
+  height: 20px;
+  width: 20px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+}
+
+.yellowcircle {
+  height: 20px;
+  width: 20px;
+  background-color: #FCEA37;
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+}
+
+.greencircle {
+  height: 20px;
+  width: 20px;
+  background-color: #53C25C;
+  border-radius: 50%;
+  position: absolute;
+  left: 80px;
+}
+
+.window {
+  height: 870px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 25px;
 }
 
 #about-me {
@@ -76,7 +177,7 @@ li a:hover {
 
 #about-me-text {
   position: absolute;
-  top: 55px;
+  top: 70px;
   left: 20px;
   color: white;
   padding-left: 25px;
@@ -90,6 +191,16 @@ li a:hover {
 
 span.output {
   color: white;
+}
+
+#projects {
+  padding: 60px;
+}
+
+#contact {
+  padding: 60px;
+  color: white;
+  background: black;
 }
 
 footer {
