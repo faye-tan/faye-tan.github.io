@@ -9,21 +9,21 @@
 	<meta name="author" content="Faye Jingfei Tan"> 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="styles/style.css" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,600" rel="stylesheet">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
 
 	<!-- Navigation -->
 	<nav id="navbar" class="navbar navbar-fixed-top" role="navigation">
-		<div class="container-fluid">
+		<div class="container-fluid" style="min-width: 660px;">
 			<ul class="nav navbar-nav">
-        			<li id="name">FAYE TAN</li>
-				<li class="active"><a href="#home"> HOME </a></li>
-				<li><a href="#aboutme"> ABOUT ME </a></li>
-				<li><a href="#projects"> PROJECTS </a></li>
+        <li id="name">FAYE TAN</li>
 				<li><a href="#contact"> CONTACT </a></li>
+        <li><a href="#projects"> PROJECTS </a></li>
+        <li><a href="#about-me"> ABOUT ME </a></li>
+        <li class="active"><a href="#home"> HOME </a></li>
 			</ul>
 		</div>
 	</nav>
@@ -34,36 +34,41 @@
 			Hello World! <br>
 		</div>
 		<div class="intro">
-			I'm Faye (Jingfei) Tan, a programmer with an Photoshop hobby. 
+			I'm Jingfei Tan, but most people call me Faye. I'm programmer with an Photoshop hobby. 
 		</div>
 	</section>
 
 	<!-- About Me --> 
-	<div id="aboutme"> 
-	&gt;&gt;&gt; type(Faye) <br>
-	Human <br>
-	&gt;&gt;&gt; Faye == Jingfei <br>
-	True <br>
-	&gt;&gt;&gt; Faye.age <br>
-	19 <br>
-	&gt;&gt;&gt; Faye.hometown <br>
-	Saskatoon, Saskatchewan <br>
-	&gt;&gt;&gt; Faye.education <br>
-	University of Toronto, Undergraduate Year 2 <br>
-	&gt;&gt;&gt; Faye.majors <br>
-	['Computer Science', 'Statistics'] <br>
-	&gt;&gt;&gt; Faye.resume <br>
-	<span class="output"> <a target="_blank" href="resume.pdf">jingfeitan.resume</a><br></span>
-	&gt;&gt;&gt; Faye.email <br>
-	<span class="output"> <a target="_blank" href="mailto:jingfei.tan@mail.utoronto.ca">jingfei.tan@mail.utoronto.ca</a><br></span> 
-	&gt;&gt;&gt; Faye.linkedin <br>
-	<span class="output"> <a target="_blank" href="https://www.linkedin.com/in/jingfei-tan">https://www.linkedin.com/in/jingfei-tan</a><br></span>
-	&gt;&gt;&gt; Faye.github <br>
-	<span class="output"> <a target="_blank" href="https://github.com/jingfeitan">https://github.com/jingfeitan</a><br></span>
-	&gt;&gt;&gt; Faye.telljoke() <br>
-	If a duck threw bread at you, you'd have to...duck. <br>
-	&gt;&gt;&gt; Faye.likes() <br>
-	['avocados', 'chai lattes', 'Debussy', 'marine animals', 'bad puns'] <br>
+	<div id="about-me"> 
+    <div id="container" style="min-width: 740px;">
+      <img src="images/console.jpg" alt="Code console window" style="width: 100%; height: 850px;">
+  	  <div id="about-me-text">
+      &gt;&gt;&gt; type(Faye) <br> 
+    	Human <br> <br>
+    	&gt;&gt;&gt; Faye == Jingfei <br>
+    	True <br> <br>
+    	&gt;&gt;&gt; Faye.age <br>
+    	19 <br> <br>
+    	&gt;&gt;&gt; Faye.hometown <br>
+    	Saskatoon, Saskatchewan <br> <br>
+    	&gt;&gt;&gt; Faye.education <br>
+    	University of Toronto, Undergraduate Year 2 <br> <br>
+    	&gt;&gt;&gt; Faye.majors <br>
+    	['Computer Science', 'Statistics'] <br> <br>
+    	&gt;&gt;&gt; Faye.resume <br>
+    	<span class="output"> <a target="_blank" href="resume.pdf">jingfeitan.resume</a><br> <br></span>
+    	&gt;&gt;&gt; Faye.email <br>
+    	<span class="output"> <a target="_blank" href="mailto:jingfei.tan@mail.utoronto.ca">jingfei.tan@mail.utoronto.ca</a><br><br></span> 
+    	&gt;&gt;&gt; Faye.linkedin <br>
+    	<span class="output"> <a target="_blank" href="https://www.linkedin.com/in/jingfei-tan">https://www.linkedin.com/in/jingfei-tan</a><br><br></span>
+    	&gt;&gt;&gt; Faye.github <br>
+    	<span class="output"> <a target="_blank" href="https://github.com/jingfeitan">https://github.com/jingfeitan</a><br><br></span>
+    	&gt;&gt;&gt; Faye.telljoke() <br>
+    	Why does a keyboard never sleep? Because it has two shifts. <br><br>
+    	&gt;&gt;&gt; Faye.getlikes() <br>
+  	  {'food': 'avocado', 'activity': 'camping', 'architecture style': 'gothic', 'video game': 'just dance', 'other': 'bad puns'} <br>
+      </div>
+    </div>
 	</div>	
 
 	<!-- Projects -->
