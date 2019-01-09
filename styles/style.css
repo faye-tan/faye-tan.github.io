@@ -7,12 +7,16 @@ html {
 
 body {
 	margin: 0px;
-	font-size: 16px;
 	font-family: Raleway;
 	text-align: left;
 	color: #333333; 
 	background-color: #DEE5FF;
   padding-top: 50px;
+}
+
+h1 {
+  font-family: Ruluko;
+  font-size: 25px;
 }
 
 #navbar {
@@ -36,12 +40,14 @@ ul {
 
 #name {
   float: left;
+  font-family: Ruluko;
   color: white;
   display: block;
   padding: 14px 16px;
 }
 
 li {
+  font-family: Ruluko;
   float: right;
 }
 
@@ -55,14 +61,25 @@ li a {
 
 li a:hover {
   color: #6B7AC9;
-  background-color: white;
+  text-decoration: underline;
+}
+
+#top {
+  padding: 60px;
+  text-align: center;
+  color: white;
+  background: rgb(100, 100, 100);
 }
 
 #home {
   padding: 60px;
 }
 
-input.set {
+input .set { 
+  display: none; 
+}
+
+.set {
   display: none;
 }
 
@@ -86,20 +103,23 @@ input.set {
   margin-left:-400%; 
 }
 
-#slideshow-container {
-  margin: 50px auto;
-  width: 80%;
-  position: relative;
+
+#slideshow-container { 
+  margin:50px auto; 
+  width:850px; 
+  height: 0px;
+  padding-bottom: 500px;
+  position:relative; 
 }
 
-#slideshow-container .mask {
-  width: 90%;
-  overflow: hidden;
-  margin: auto;
+#slideshow-container .mask { 
+  width:90%; 
+  overflow:hidden; 
+  margin:auto; 
 }
 
-#slideshow-container .overflow {
-  width:400%; 
+#slideshow-container .overflow { 
+  width:500%; 
   -webkit-transform:translateZ(0); 
   -webkit-transition:all 0.5s ease-out; 
   -moz-transition:all 0.5s ease-out; 
@@ -107,20 +127,19 @@ input.set {
   transition:all 0.5s ease-out; 
 }
 
-#slideshow-container .slide {
-  width: 25%
-  height: 200px;
-  line-height:200px;
-  float: left;
-  background: #fff;
-}
+#slideshow-container .slide { 
+  width:20%; 
+  height:auto; 
+  line-height:200px; 
+  float: left; 
+  background:#fff; }
 
-#controls {
-  width: 100%;
+#controls { 
+  width:100%; 
 }
 
 #controls label { 
-  display:none; 
+  display: none; 
   width:5%; 
   height:60px; 
   opacity:0.3; 
@@ -132,47 +151,26 @@ input.set {
 }
 
 #controls label:hover { 
+  z-index: 1000;
   opacity:0.8; 
 }
 
 #slide1:checked ~ #controls label:nth-child(2), 
 #slide2:checked ~ #controls label:nth-child(3), 
-#slide3:checked ~ #controls label:nth-child(4),
-#slide4:checked ~ #controls label:nth-child(5) { 
+#slide3:checked ~ #controls label:nth-child(4), 
+#slide4:checked ~ #controls label:nth-child(5),
+#slide5:checked ~ #controls label:nth-child(1) { 
   right:0; 
   display:block; 
 }
 
-#prev, #next {
-  cursor: pointer;
-  position: absolute;
-  top: 60%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  user-select: none;
-}
-
-#prev {
-  left: 0;
-  border-radius: 0 3px 3px 0;
-}
-
-#next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-#prev:hover, #next:hover {
-  background-color: rgba(100,100,100,0.8);
-}
-
-#prev:target ~ .image-holder {
-  left:0px;
+#slide1:checked ~ #controls label:nth-child(5), 
+#slide2:checked ~ #controls label:nth-child(1), 
+#slide3:checked ~ #controls label:nth-child(2), 
+#slide4:checked ~ #controls label:nth-child(3),
+#slide5:checked ~ #controls label:nth-child(4) { 
+  left:0; 
+  display:block; 
 }
 
 #container {
@@ -237,6 +235,7 @@ input.set {
 }
 
 #about-me-text {
+  text-align: left;
   position: absolute;
   top: 70px;
   left: 20px;
@@ -246,12 +245,14 @@ input.set {
   word-break: break-all;
 }
 
-#about-me a:hover {
-  text-decoration: italic;
+#about-me a {
+  color: white;
+  text-decoration: none;
 }
 
-span.output {
-  color: white;
+#about-me a:hover {
+  color: #DB6E67;
+  text-decoration: underline;
 }
 
 #projects {
@@ -275,9 +276,9 @@ footer p{
 }
 
 <!-- typewriter effect from tutorial https://css-tricks.com/snippets/css/typewriter-effect/ --> 
-.typewriter {
+.typewriter h1 {
 	color: #333333;
-	font-family: Raleway;
+	font-family: Roboto-Mono;
 	letter-spacing: .15em;
 	overflow: hidden;
 	white-space: no-wrap; 
