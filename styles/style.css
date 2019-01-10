@@ -71,6 +71,155 @@ li a:hover {
   background: rgb(100, 100, 100);
 }
 
+.typewriter {
+  font-family: Roboto Mono;
+  font-size: 40px;
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 9s steps(25, end), blink .75s step-end infinite;
+  white-space: nowrap;
+  border-right: 4px solid orange;
+  box-sizing: border-box; 
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0em
+  } to {
+    width: 8em
+  }
+}
+
+@keyframes blink {
+    from, to { 
+      border-color: transparent 
+    } 40% { 
+      border-color: orange; 
+    }
+}
+
+/* from http://google.github.io/material-design-icons/ */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.md-48 { 
+  font-size: 48px; 
+}
+
+.slide i {
+  color: rgba(255, 255, 255, 0.70); 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.icon-label {
+  font-family:Ruluko;
+  text-transform:uppercase;
+  text-shadow: 2px 2px 4px #000000;
+  visibility: hidden;
+}
+
+.slide i:hover {
+  color: white;
+  text-decoration: underline;
+  .icon {
+    visibility: visible;
+  }
+}
+
+.icon:hover .icon-label {
+  visibility: visible;
+}
+
+#icon1 {
+  top: 380px;
+  left: 220px;
+}
+
+.iconinfo1 {
+  color: white;
+  position: absolute;
+  top: 260px;
+  left: 250px;
+  z-index: 1000;
+}
+
+#icon2 {
+  top: 190px;
+  left: 1080px;
+}
+
+.iconinfo2 {
+  color: white;
+  position: absolute;
+  top: 90px;
+  left: 1140px;
+  z-index: 1000;
+}
+
+#icon3 {
+  top: 80px;
+  left: 2150px;
+}
+
+.iconinfo3 {
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 2000px;
+  z-index: 1000;
+}
+
+#icon4 {
+  top: 300px;
+  left: 2720px;
+}
+
+.iconinfo4 {
+  color: white;
+  position: absolute;
+  top: 220px;
+  left: 2780px;
+  z-index: 1000;
+}
+
+#icon5 {
+  top: 350px;
+  left: 3150px;
+}
+
+.iconinfo5 {
+  color: white;
+  position: absolute;
+  top: 270px;
+  left: 3220px;
+  z-index: 1000;
+}
+
 #home {
   padding: 60px;
 }
@@ -108,7 +257,7 @@ input .set {
   margin:50px auto; 
   width:850px; 
   height: 0px;
-  padding-bottom: 500px;
+  padding-bottom: 550px;
   position:relative; 
 }
 
@@ -273,24 +422,6 @@ footer {
 
 footer p{
   margin: 0;
-}
-
-<!-- typewriter effect from tutorial https://css-tricks.com/snippets/css/typewriter-effect/ --> 
-.typewriter h1 {
-	color: #333333;
-	font-family: Roboto-Mono;
-	letter-spacing: .15em;
-	overflow: hidden;
-	white-space: no-wrap; 
-	margin: 0 auto;
-	animation:
-		typing 3.5s steps(40, end),
-		blink-cursor .75s step-end infinit; 
-}
-
-@keyframes typing {
-	from {width: 0}
-	to {width: 100%} 
 }
 
 @keyframes blinking-cursor {
