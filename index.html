@@ -1,200 +1,79 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<!--suppress ALL -->
 <html lang="en">
 
 <head>
-  <title> Jingfei (Faye) Tan's Personal Website </title>
-  <meta charset="utf-8">
+    <title> Jingfei (Faye) Tan's Personal Website </title>
+    <meta charset="utf-8">
 	<meta name="description" content="Faye Tan's Personal Website">
-	<meta name="keywords" content="faye jingfei tan"> 
-	<meta name="author" content="Faye Jingfei Tan"> 
+	<meta name="keywords" content="faye jingfei tan">
+	<meta name="author" content="Faye Jingfei Tan">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="styles/style.css" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <!-- Google Fonts --> 
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,600" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,600" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ruluko" rel="stylesheet">
+	<link href="styles/style_draft.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Averia+Serif+Libre|Laila:600|Montserrat|Nunito|Playfair+Display:700|Righteous|Signika+Negative:600&display=swap" rel="stylesheet">
+  	<!-- Google Fonts -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<!--Javascript-->
+	<script type="text/javascript" src="scripts/script.js">
+		alert("This alert box was called with the onload event");
+	</script>
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar">
-	<!-- Navigation -->
-	<nav id="navbar" class="navbar navbar-fixed-top" role="navigation">
-		<div class="container-fluid" style="min-width: 660px;">
-			<ul class="nav navbar-nav">
-        <li id="name">FAYE TAN</li>
-				<li><a href="#contact"> CONTACT </a></li>
-        <li><a href="#projects"> PROJECTS </a></li>
-        <li><a href="#about-me"> ABOUT ME </a></li>
-        <li class="active"><a href="#home"> HOME </a></li>
-			</ul>
+	<!-- Intro -->
+<section>
+	<div class="intro">
+		<div id="navigation">
+			<nav id ="navbar" class="navbar navbar-fixed-top" data-spy="affix" role="navigation">
+				<div class="container-fluid icon-bar" style="min-width: 660px;">
+					<ul class="nav navbar-nav">
+						<li><a href="resume2019.pdf"><i class="far fa-file-alt"></i></a></li>
+						<li><a href="mailto:jingfei.tan@mail.utoronto.ca"><i class="far fa-envelope"></i></i></a></li>
+						<li><a href="https://www.linkedin.com/in/faye-tan"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="https://github.com/faye-tan"><i class="fab fa-github"></i></a></li>
+						<li><a href="#contact"> CONTACT </a></li>
+						<li><a href="#projects"> PROJECTS </a></li>
+						<li><a href="#about-me"> ABOUT ME </a></li>
+						<li class="active"><a href="#home"> HOME </a></li>
+                        <li id="name"><a>FAYE TAN</a></li>
+					</ul>
+				</div>
+			</nav>
 		</div>
-	</nav>
+	</div>
+</section>
 
-  <!-- Page Head -->
-  <section id="top">
-		<div class="intro">
-      <div class="typewriter">Hello World!<br></div>
-			<p class="introduction"> My name is Jingfei Tan but I prefer Faye, and I'm programmer with an Photoshop hobby. <br>
-      Please excuse the mess, the site is still under construction! </p>
-		</div>
-  </section> 
-
-	<!-- Home --> 
-	<section id="home">
-  <!-- Photo Slideshow --> 
-  <div id="slideshow-container">
-  <input checked type="radio" name="slider" id="slide1" class="set" />
-  <input type="radio" name="slider" id="slide2" class="set" />
-  <input type="radio" name="slider" id="slide3" class="set" />
-  <input type="radio" name="slider" id="slide4" class="set" />  
-  <input type="radio" name="slider" id="slide5" class="set" /> 
-      
-  <div class="mask">    
-    <div class="overflow">
-      
-      <div class="slide">
-          <img src="https://raw.githubusercontent.com/jingfeitan/jingfeitan.github.io/master/images/slideshow1.JPG" width="100%">
-          <div class="icon">
-            <i id="icon1" class="material-icons md-48">place</i>
-            <span class="icon-label">
-              <span class="iconinfo1"> Palermo, Italy.</span>
-            </span> 
-          </div>
-      </div>
-      <div class="slide">
-        <img src="https://raw.githubusercontent.com/jingfeitan/jingfeitan.github.io/master/images/slideshow2.JPG" width="100%">
-        <div class="icon">
-          <i id="icon2" class="material-icons md-48">terrain</i>
-          <span class="icon-label">
-            <span class="iconinfo2"> Banff, Alberta. </span>
-          </span>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="https://raw.githubusercontent.com/jingfeitan/jingfeitan.github.io/master/images/slideshow3.JPG" width="100%">
-        <div class="icon">
-          <i id="icon3" class="material-icons md-48">favorite</i>
-          <span class="icon-label">
-            <span class="iconinfo3"> My lovely friends. </span>
-          </span>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="https://raw.githubusercontent.com/jingfeitan/jingfeitan.github.io/master/images/slideshow4.JPG" width="100%">
-        <div class="icon">
-          <i id="icon4" class="material-icons md-48">face</i>
-          <span class="icon-label">
-            <span class="iconinfo4"> My baby brother, Leighton. </span>
-          </span>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="https://raw.githubusercontent.com/jingfeitan/jingfeitan.github.io/master/images/slideshow5.JPG" width="100%">
-        <div class="icon">
-          <i id="icon5" class="material-icons md-48">info</i>
-          <span class="icon-label">
-            <span class="iconinfo5"> Me, in my natural habitat. </span>
-          </span>
-        </div>
-      </div>
-    </div>    
-  </div>
-
-  <div id="controls" onclick="">  
-    <label for="slide1"></label>
-    <label for="slide2"></label>
-    <label for="slide3"></label>
-    <label for="slide4"></label> 
-    <label for="slide5"></label>
-  </div>
-</div>
-      <!-- Controls 
-      <a id="prev" class="slideshow-button" onclick="nextSlide(-1)"> &#10094 </a>
-      <a id="next" class="slideshow-button" onclick="nextSlide(1)"> &#10095 </a>
-      -->
-	</section>
-
-	<!-- About Me --> 
-	<div id="about-me"> 
-  <h1> ABOUT ME (This Section Under Construction) </h1>
-    <div id="container" style="min-width: 740px;">
-      <!-- <img src="images/console.jpg" alt="Code console window" style="width: 100%; height: 850px;"> -->
-      <div class="window"> 
-        <div class="windows-top">
-          <div class="circles-wrap">
-            <div class="redcircle"> </div>
-            <div class="yellowcircle"> </div>
-            <div class="greencircle"> </div>
-          </div>
-        </div>
-      </div>
-      <div id="about-me-text">
-      &gt;&gt;&gt; type(Faye) <br> 
-    	Human <br> <br>
-    	&gt;&gt;&gt; Faye == Jingfei <br>
-    	True <br> <br>
-    	&gt;&gt;&gt; Faye.age <br>
-    	19 <br> <br>
-    	&gt;&gt;&gt; Faye.hometown <br>
-    	Saskatoon, Saskatchewan <br> <br>
-    	&gt;&gt;&gt; Faye.education <br>
-    	2nd year undergraduate student at University of Toronto<br> <br>
-    	&gt;&gt;&gt; Faye.majors <br>
-    	['Computer Science', 'Statistics'] <br> <br>
-    	&gt;&gt;&gt; Faye.resume <br>
-    	<span class="output"> <a target="_blank" href="resume.pdf">jingfeitan.resume</a><br> <br></span>
-    	&gt;&gt;&gt; Faye.email <br>
-    	<span class="output"> <a target="_blank" href="mailto:jingfei.tan@mail.utoronto.ca">jingfei.tan@mail.utoronto.ca</a><br><br></span> 
-    	&gt;&gt;&gt; Faye.linkedin <br>
-    	<span class="output"> <a target="_blank" href="https://www.linkedin.com/in/jingfei-tan">https://www.linkedin.com/in/jingfei-tan</a><br><br></span>
-    	&gt;&gt;&gt; Faye.github <br>
-    	<span class="output"> <a target="_blank" href="https://github.com/jingfeitan">https://github.com/jingfeitan</a><br><br></span>
-    	&gt;&gt;&gt; Faye.telljoke() <br>
-    	Why does a keyboard never sleep? Because it has two shifts. <br><br>
-    	&gt;&gt;&gt; Faye.getlikes() <br>
-  	  {'food': 'avocado', 'activity': 'camping', 'architecture style': 'gothic', 'video game': 'just dance', 'other': 'bad puns'} <br>
-      </div>
+<section class="intro-image">
+    <div class="container">
+		<h3 class="intro">HELLO WORLD! <br> MY NAME IS <span class="full-name">FAYE TAN</span> AND I'M A
+			<span class="text-rotate"
+				  data-period="2000"
+				  data-rotate='[ "DEVELOPER.", "3RD YEAR COMPUTER SCIENCE STUDENT.", "PUN LOVER!"]'>
+			</span>
+			<br>(SITE UNDER CONSTRUCTION)
+		</h3>
     </div>
-	</div>	
+</section>
 
-	<!-- Projects -->
-	<div id="projects">
-  <h1> PROJECTS (This Section Under Construction) </h1>
-	</div>
+<div id="about-me">
+	<!--TODO-->
+</div>
 
-	<!-- Contact -->
-	<div id="contact">
-    <h1> CONTACT (This Section Under Construction) </h1> <br>
-    <br>
-    Shoot me a message!
-	</div>
+<div id="experience">
+	<!--TODO-->
+</div>
 
-	<!-- Footer --> 
-	<footer> 
-		<div id="footer" class="container text-center">
-			<p>&#169 Jingfei Tan 2019. (SITE UNDER CONSTRUCTION)</p>
-		</div>
-	</footer>
+<div id="projects">
+	<!--TODO-->
+</div>
+
+<div id="contact">
+	<!--TODO-->
+</div>
+
 </body>
-
 </html>
-
-<!-- NOTES
-NAVIGATION: 
-	Hello World! My name is Faye Tan, and I'm a programmer. 
-ABOUT ME: 
-		
-	
-PROJECTS:
-	- Blockorz
-	- singulARCADE
-	- Legally Blonde Poster
-	
-CONTACT:
-	- I am currently in school for the Spring semester, however I am actively searchng for an internship/co-op for the summer term of 2019. 
-	- My inbox is always open, whether for a quick hello, or 
-
-FOOTER:
-	- &#169 2019 Jingfei Tan.
--->
